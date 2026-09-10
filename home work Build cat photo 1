@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <h2>Cat Photos</h2>
+    <p>Everyone loves <a href="/online cats">cute cats</a> online!</p>
+    <p>See more <a href="/cat photo">cat photos</a> in our gallery.</p>
+    <img src="https://up.yimg.com/ib/th/id/OIP.52vh2W51rRZNuhtq66C08gHaLH?pid=Api&rs=1&c=1&qlt=95&w=79&h=119" alt ="a cute kitty">
+    <h2>Cat Lists</h2>
+    <h3>Things cats love:</h3>
+      <p>. catnip</p>
+      <p>. laser pointers</p>
+       <p>. lagsana</p> 
+       <img src="https://tse2.mm.bing.net/th/id/OIP.tF6Nw6HqUZYTImczmUTYLAHaE8?r=0&pid=Api&h=220&P=0" alt="delicous lagsana">
+      <p4>Cats love lagsagna.
+    <h3> Top 3 things cats hate:</h3>
+    <p>1. flea treatment<p>
+    <p>2. thunder</p>
+    <p>3. other cats<p>
+      <img src="https://tse3.mm.bing.net/th/id/OIP.ReXuXafAx1wPJqa0ncN2nwHaE8?r=0&pid=Api&h=220&P=0" alt="2 cats are arguing">
+      <p4>Cats hate other cats.</p4>
+  <p> No Copyright - <a href="/freeCodeCamp.org">freeCodeCamp.org</a></p>
