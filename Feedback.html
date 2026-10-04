@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>May and Leaf - Handcrafted Buble Tea</title>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="./styles.css"/>
-</head>
-   <body>
-  <header>
-    <h1>Feedback Form</h1>
-  <p>Thankyou for visting <cite>May and Leaf</cite>- Handcrafted Bubble Tea. We value your feedback to help us serve you better. Please take a moment to answer the following questions</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+    <h1 id="title">Feedback Form </h1>
+  <p id="description">Thankyou for visting <cite>May and Leaf</cite>- Handcrafted Bubble Tea. We value your feedback to help us serve you better. Please take a moment to answer the following questions</p>
  </header> 
      <main>
-       <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+       <form id="survey-form" method="POST" action="https://hotel-feedback.freecodecamp.org">
          <fieldset>
            <legend>Personal Information</legend>
-           <label for="full-name">Name:</label>
-           <input type="text" id="full-name" name="name" placeholder="Dung Le" required size="20">
-           <label for="email">Email Adress:</label>
-           <input placeholder="example@gmail.com" id="email" type="email" name="email" size="20"/>
-           <label for="age">Age (optional):</label>
-           <input type="number" name"age" id="age" min="3" max="100"/>
+           <label for="full-name" id="name-label">Name:</label>
+           <input type="text" id="name" name="name" placeholder="Dung Le" required size="20">
+           <label for="email" id="email-label">Email Adress:</label>
+           <input placeholder="example@gmail.com" id="email" type="email" name="email" size="20" required/>
+           <label for="age" id="number-label">Age (optional):</label>
+           <input 
+           placeholder="(+49) 12345 6789"
+           type="number" name"age" id="number" min="3" max="100"/>
            <label for="text">Which drinks did you order?</label>
            <input type="text" id="text" name="text" placeholder="Oolong Tea" required size="20"
           </fieldset>
 
          <fieldset>
-          <legend>1.How satisfied were you with your overall experience at our store?</legend>
+          <legend>1. How satisfied were you with your overall experience at our store?</legend>
          <input type="checkbox" id="very-sastisfied" name="choice" value="very-sastisfied"/>
            <label for="very-sastisfied">Very Sastisfied</label>
 
@@ -44,9 +45,10 @@
          </fieldset>
 
              <fieldset>
-               <legend>Ratings </legend>
+               <legend>2. Ratings </legend>
                <label for="service">How friendly and helpful was the staff?</label>
-               <select name="service" id="service">
+               <select name="service" id=dropdown">
+                
                  <option value="Excellent">Excellent</option>
                  <option value="Good">Good</option>
                  <option value="Fair">Fair</option>
@@ -55,24 +57,30 @@
                </select>
 
                <label for="Drinks">How would you rate the quality of the drinks?</label>
-               <select name="drinks" id="drinks">
+               <select name="drinks" id="dropdown">
                  <option value="Excellent">Excellent</option>
                  <option value="Good">Good</option>
                  <option value="Fair">Fair</option>
                  <option value="Poor">Poor</option>
               <option selected value="Excellent">Excellent</option>
                </select>
+               
 
                
              </fieldset>
-           <label for"comments">What could we do to improve your experience?</label>
+             <fieldset>
+              <legend>3. Recommend</legend>
+              <p>Would you like to recommend <cite>May and Leaf</cite>- Handcrafted Bubble Tea to a friend?</p>
+              <label for="yes-option">Yes</label>
+              <input id="yes-option" type="radio" value="yes" name="survey-form"/>
+              <label for="no-option">No</label>
+              <input id="no-option" type="radio" value="no" name="survey-form"/>
+             </fieldset>
+           <label for"comments">4. What could we do to improve your experience?</label>
              <textarea cols="30" rows="10" name="comments" id="comment"></textarea>
-             <button type="submit">Submit</button> 
-           </form>
-               
-            
-     </main>
+             <button type="submit" id="submit">Submit</button> 
 
-    
+           </form>
+           </main>
   </body>
-  </html>
+</html>
